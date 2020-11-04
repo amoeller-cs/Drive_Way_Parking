@@ -36,7 +36,7 @@ router.post("/insert_newpost", async function (req, res, next) {
 
 router.post("/insert_user", async function (req, res, next) {
   console.log(req.body);
-  await db.insertData("posting", "users", req.body); 
+  await db.insertData("posting", "users", req.body); // we struggled with handling responses in our project. I am curious as to the effects of not handling res
 
 });
 
@@ -48,8 +48,8 @@ router.post("/get_user", async function (req, res, next) {
 
 router.post("/insert_appointment",async function (req, res, next) {
   console.log(req.body);
-  const p =await db.insertData("posting", "appointment", req.body); 
-  res.json(p);
+  const p =await db.insertData("posting", "appointment", req.body); // the organization of data processing is very good! easy to follow with how you guys structured
+  res.json(p);                                                      // the queries and requests
 });
 
 
