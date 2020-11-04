@@ -13,7 +13,7 @@
 ![alt text](https://github.com/AZYDEVE/Drive_Way_Parking/blob/main/Image/sc3.png)
 ![alt text](https://github.com/AZYDEVE/Drive_Way_Parking/blob/main/Image/sc2.png)
 
-### To run the application:  
+### Instructions to build:  
 - clone the files to you computer 
 - git npm install , to stall all the dependencies in the package.json file
 - git npm install in the front-react folder
