@@ -30,8 +30,8 @@ function App() {
 
 
    useEffect(()=>{
-    const data=localStorage.getItem("current-user");
-    if(data){
+    const data=localStorage.getItem("current-user"); // we also struggled with user authentication and resolved this similarly but used sessionStorage instead of localStorage
+    if(data){                                        // curious as to how these differ. sessionStorage keeps user logged in until the browser is closed.
       setUserInfo(JSON.parse(data))
     }
   },[])
