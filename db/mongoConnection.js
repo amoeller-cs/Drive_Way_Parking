@@ -7,9 +7,9 @@ const mongo = () => {
 };
 
 module.exports = {
-  getData: async (databaseName, collection, query) => {
-    console.log(query);
-    const client = mongo();
+  getData: async (databaseName, collection, query) => { // interesting to pass the db name. never thought about this but would be very useful if dealing
+    console.log(query);                                 // with multiple dbs in a large project. also great way to handle query processing outside of the
+    const client = mongo();                             // db file, I would like to try doing this in my own project.
     await client.connect();
     const database = client.db(databaseName);
     const collections = database.collection(collection);
