@@ -19,6 +19,7 @@ class PostForm extends Component {
     event.preventDefault();
     console.log(this.state)
 
+    // sending the request directly to localhost may lead to an error when deployed on the web
      this.sentHttpRequest("post","http://localhost:3001/user_posts/insert_data", this.state)
 
 
