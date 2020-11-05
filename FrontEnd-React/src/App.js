@@ -50,7 +50,8 @@ function App() {
   }
 
 
-  
+  // great use of React routes; I wish we were able to figure out the React DOM Router in time, but you did a great job
+  // with routing to different pages
   return (
     <Router>
       <div className="App">
@@ -87,7 +88,7 @@ function App() {
           </Navbar.Collapse>
         </Navbar>
 
-       <UserContext.Provider value={{ userInfo, setUserInfo }}>
+       <UserContext.Provider value={{ userInfo, setUserInfo }}> 
           <Switch>
             <Route path="/searchpage" component={SearchPage} />
             <Route path="/createpost" component={CreatePost} />
