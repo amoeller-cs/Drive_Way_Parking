@@ -96,6 +96,8 @@ const handleChangeCheckBox = (event) => {
   console.log(formValue.monday);
 };
 
+  // Again, using .map() here may be better and more efficient than creating a handleStartTime()
+  // and handleEndTime() for each day
 const handleStartTimeMonday = (time) => {
   setFormValue({
     ...formValue,
