@@ -9,6 +9,9 @@ import DayPicker from "react-day-picker";
 import "react-day-picker/lib/style.css";
 import swal from "sweetalert";
 
+// it may be better to create an array or database of the days (Monday, Tuesday, etc...) and then consolidate the temp with map() 
+// so that you don't have to format it for every day
+// Otherwise, the calendar looks really good and I think you did a great job of formatting the times for each day
 function Calendar() {
   const checkBusinessHr = (driveWayPost) => {
     const temp = [];
@@ -197,7 +200,10 @@ function Calendar() {
 
     return schedule;
   };
-
+// Great use of container, but be sure to organize rows and columns correctly;
+// Make sure it is clear which column or row an element is in, some of your components are in a row
+// inside a column that is already inside another row; not sure if you meant to do that but it can become 
+// hard to organizze.
   return (
     <>
       <br />
