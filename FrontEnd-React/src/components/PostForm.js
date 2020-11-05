@@ -15,6 +15,7 @@ class PostForm extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
 
+// This is an interesting way to send a post request, we may try to implement this in our prokect in the future.
   submitHandler = (event) => {
     event.preventDefault();
     console.log(this.state)
