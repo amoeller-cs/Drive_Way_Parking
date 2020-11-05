@@ -99,6 +99,8 @@ const handleChangeCheckBox = (event) => {
   // may be able to condense the handle time functions to one function and pass it an additional variable indicating the day;
   // for example, use if statements: if (day === "Monday") MondayStartTime: startTime; MondayEndTime: endTime;
 
+  // Again, using .map() here may be better and more efficient than creating a handleStartTime()
+  // and handleEndTime() for each day
 const handleStartTimeMonday = (time) => {
   setFormValue({
     ...formValue,
